@@ -252,3 +252,58 @@ The following decimal fields, representing currency amounts, are protected by Dj
 
 ---
 
+# Testing
+The Testing section covers various strategies used to ensure the application's functionality and quality. This includes **manual testing** for hands-on verification, **validator testing** to check data integrity, **user story testing** to confirm features meet user requirements, and **automated testing** to streamline repeated tests and ensure consistent performance throughout development. Each approach contributes to a robust, error-free application.
+
+## Manual Testing
+
+### Feature Testing
+The manual testing of features is organised by app below. Testing was carried out on a 1920 x 1080 desktop screen, a Samsung tablet and an Samsung S22 Ultra.
+<!-- Amend devices as required for testing -->
+
+<details>
+<summary>... App</summary>
+<!-- Example of how to layout table below -->
+|Page|Feature|Action|Effect|
+|---|---|---|---|
+|/basket/view_basket/|All items appear in list|Add item to list in product_detail page|Item appears on table|
+|/basket/view_basket/|Item quantities are correct|Add n items in product_detail page|n items appear on table|
+</details>
+
+<!-- Repeat for each app - make sure all buttons/forms/elements in general are tested - be thorough -->
+<details>
+<summary>... App</summary>
+<!-- Example of how to layout table below -->
+|Page|Feature|Action|Effect|
+|---|---|---|---|
+|/basket/view_basket/|All items appear in list|Add item to list in product_detail page|Item appears on table|
+|/basket/view_basket/|Item quantities are correct|Add n items in product_detail page|n items appear on table|
+</details>
+
+### Responsiveness
+All pages on the live site were tested with the default list of devices in Chrome Devtools.
+<!-- Add any things to note of interst - i.e some acceptable compromise -->
+
+### Lighthouse
+The Lighthouse testing results are displayed by page below:
+
+<details>
+<summary>Lighthouse results by page</summary>
+
+<!-- Add page as bullet point and lighthouse result screenshot - Performance, Accessibility and SEO - best practices -->
+
+- Welcome Page (Landing Page)
+
+![welcome_page_lighthouse](static/doc_images/lighthouse_reports/FILE_PATH)
+
+<!-- Repeat for each page -->
+
+- Another Page
+
+![another_page_lighthouse](static/doc_images/lighthouse_reports/FILE_PATH)
+
+</details>
+
+### Code Validation
+
+#### Python code :
