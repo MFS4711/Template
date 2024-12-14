@@ -7,13 +7,6 @@ Source code can be found [here](Add link)
 
 The live project can be viewed [here](Add link)
 
-## Purpose of Project
-The aim of the project is to ...
-The website consists of ...
-
-<!-- Photo from responsiveness website - check file path -->
-![responsivenes_screenshot](/static/doc_images/responsiveness_screenshot.png)
-
 ---
 
 ## Links to content
@@ -38,12 +31,8 @@ The website consists of ...
     - [Feature Testing](#feature-testing)
     - [Responsiveness](#responsiveness)
     - [Lighthouse](#lighthouse)
-    - [Code Validation](#code-validation)
-        - [Python](#python-code)
-        - [JavaScript](#javascript-code)
-        - [HTML](#html-validation)
-        - [CSS](#css-validation)
-    - [User Stories](#user-stories)
+- [Validation Testing](#validation-testing)
+- [User Story Testing](#user-story-testing)
 - [Automated Testing](#automated-testing)
     - [Django testing](#testing-django-views-models-and-forms)
 
@@ -62,7 +51,18 @@ The website consists of ...
 
 ---
 
-## Features
+# Purpose of Project
+The aim of the project is to ...
+The website consists of ...
+
+<!-- Photo from responsiveness website - check file path -->
+![responsivenes_screenshot](/static/doc_images/responsiveness_screenshot.png)
+
+---
+
+[Return to top](#Add_Title_Here)
+
+# Features
 The following pages are visible to all users, logged in or not.
 
 <!-- Create dropdowns for different sections following below format -->
@@ -337,7 +337,7 @@ The Lighthouse testing results are displayed by page below:
 ![CSS Validation](SCREENSHOT_PATH)
 </details>
 
-### User Story Testing
+## User Story Testing
 The User Epics and Stories for this project are documented across ... GitHub Projects, each corresponding to a specific iteration of the development work. You can find them here:
 
 - [Iteration 1](link)
@@ -372,3 +372,55 @@ To generate the coverage HTML report, use the following commands:
 [Return to top](#Add_Title_Here)
 
 # Bugs
+
+- A number of other bugs and their solution are documented in the issues tracker on GitHub, such as :
+    - [BUG NOT STRICTLY RELATED TO USER STORY](GITHUB_ISSUE_LINK)
+    - [ANOTHER BUG](GITHUB_ISSUE_LINK)
+    - etc.
+
+## Remaining Bugs
+There should (hopefully) be no remaining bugs in the project.
+
+---
+
+[Return to top](#Add_Title_Here)
+
+# Libraries and Programs Used
+1. [Balsamiq](https://balsamiq.com/)
+    - Balsamiq was used to wireframe all the pages in the project.
+2. [Git](https://git-scm.com/)
+    - Version control was implemented using Git through the GitHub terminal.
+3. [Github](https://github.com/)
+    - GitHub was used to store the project after being pushed from Git. The cloud service GitHub Pages was used to deploy the project on the web, while GitHub Projects tracked User Stories, Epics, bugs, and other issues throughout the development.
+4. [Gitpod](https://www.gitpod.io/)
+    - Gitpod was used as the primary IDE for development, with ESLint and Flake8 linters configured for JavaScript and Python code validation, respectively.
+5. [Heroku](https://www.heroku.com/)
+    - Heroku was used for deploying the project.
+6. [pytest](https://docs.pytest.org/en/7.1.x/)
+    - Pytest was used for automated testing of the project.
+
+---
+
+[Return to top](#Add_Title_Here)
+
+# Deployment
+
+## Deploying the app on Heroku
+
+
+## Running the app in your local environment
+
+
+---
+
+[Return to top](#Add_Title_Here)
+
+# Credits
+
+
+# Acknowledgements
+
+
+---
+
+[Return to top](#Add_Title_Here)
