@@ -161,8 +161,6 @@ The remaining pages are only accessible to staff
 <!-- description in style below -->
 The ... font was used throughout the project. It's a simple, very ligible sans-serif font, with a rounded appearance, particularly on headings and larger fonts
 
----
-
 ### Colour
 The following colour palette was used in the project
 
@@ -170,8 +168,6 @@ The following colour palette was used in the project
 
 <!-- Add short descriptions of why colours were used -->
 <!-- Maybe add colour contrast images for accessibility? -->
-
----
 
 ### Wireframes
 These wireframes outline how each page was intended to be displayed on Mobile, Tablet, Desktops and Larger Screens.
@@ -216,8 +212,6 @@ The User Epics and their related User Stories are as follows:
 - etc.
 <!-- repeat based on number of epics and stories - maybe display MoSCoW here - although will show in GitHub -->
 
----
-
 <!-- Include this section and add depth if time at the end -->
 ## Search Engine Optimization
 A set of long and short tail keywords was developed. 
@@ -233,8 +227,6 @@ After completing this research, I returned to the project's templates, and made 
 - &lt;title> tag in base.html:
     - Set to '....'. This is one of the most important SEO locations ...
 <!-- Add any tags in same form and bullet point impact of change -->
-
----
 
 ## Data Model
 This section provides an overview of the data models used in the project, represented through Entity-Relationship Diagrams (ERDs) for each application. Each sub-heading corresponds to a specific app, detailing its database schema and the relationships between key entities. These ERDs were drawn using [Lucidchart](https://www.lucidchart.com/pages/) and offer a clear visualization of how data is structured and flows within the application.
@@ -257,3 +249,6 @@ This section provides an overview of the data models used in the project, repres
 The following decimal fields, representing currency amounts, are protected by Django's MinValueValidator, with the minimum value being set at 0.
 
 <!-- Also add any JS checks on form fields etc. to ensure desired action/errors are caught -->
+
+---
+
