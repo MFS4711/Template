@@ -113,8 +113,6 @@ The following pages are visible to all users, logged in or not.
 
 </details>
 
----
-
 The following pages are only available to logged in users.
 
 <details>
@@ -127,8 +125,6 @@ The following pages are only available to logged in users.
 
 <!-- Similar to previous just repeat for each page unique to this user -->
 
----
-
 The remaining pages are only accessible to staff
 <details>
 <summary>... Page</summary>
@@ -140,8 +136,6 @@ The remaining pages are only accessible to staff
 
 <!-- Similar to previous just repeat for each page unique to this staff -->
 <!-- Add any other sections for other roles -->
-
----
 
 ## Future Features
 <!-- Bullet point any features that could be added and describe benefit -->
@@ -171,6 +165,7 @@ The following colour palette was used in the project
 
 ### Wireframes
 These wireframes outline how each page was intended to be displayed on Mobile, Tablet, Desktops and Larger Screens.
+
 #### _Welcome Page (Landing Page)_
 
 ![welcome_page wireframe](/static/doc_images/SOME_FILE_PATH)
@@ -196,8 +191,8 @@ MoSCoW prioritisation was applied using the labels must-have, should-have, and c
 The project was broken down into manageable sprints using GitHub Projects, which provided a Kanban board. Issues were posted to the board and moved from "Todo" to "In Progress" to "Done" as they were completed.
 
 The iterations are documented here :
-    - [Iteration 1]()
-    - [Iteration 2]()
+    - [Iteration 1](link)
+    - [Iteration 2](link)
     - ...
 
 The User Epics and their related User Stories are as follows:
@@ -252,6 +247,8 @@ The following decimal fields, representing currency amounts, are protected by Dj
 
 ---
 
+[Return to top](#Add_Title_Here)
+
 # Testing
 The Testing section covers various strategies used to ensure the application's functionality and quality. This includes **manual testing** for hands-on verification, **validator testing** to check data integrity, **user story testing** to confirm features meet user requirements, and **automated testing** to streamline repeated tests and ensure consistent performance throughout development. Each approach contributes to a robust, error-free application.
 
@@ -304,6 +301,74 @@ The Lighthouse testing results are displayed by page below:
 
 </details>
 
-### Code Validation
+## Validation Testing
 
-#### Python code :
+<details>
+<summary>Python Code</summary>
+
+- All python code is validated by the [Flake8 linter](https://flake8.pycqa.org/en/latest/) (installed in VSCode) and [CI Python Linter](https://pep8ci.herokuapp.com/). The sole exceptions are the test classes, whose function names and implementation can be very verbose.
+
+![Python Validation](SCREENSHOT_PATH)
+
+</details>
+
+<details>
+<summary>JavaScript Code</summary>
+
+- All JavaScript code is validated by the [ESLint](https://eslint.org/) (installed in VSCode) and [JS Hinterface](https://mfs4711.github.io/jshint-api/).
+
+![JavaScript Validation](SCREENSHOT_PATH)
+
+</details>
+
+<details>
+<summary>HTML Validation</summary>
+
+- All HTML files were validated using the [W3C Markup Validation Service](https://validator.w3.org/)
+
+![HTML Validation](SCREENSHOT_PATH)
+</details>
+
+<details>
+<summary>CSS Validation</summary>
+
+- All CSS files were validated using the [W3C Validation Service](https://jigsaw.w3.org/css-validator/)
+
+![CSS Validation](SCREENSHOT_PATH)
+</details>
+
+### User Story Testing
+The User Epics and Stories for this project are documented across ... GitHub Projects, each corresponding to a specific iteration of the development work. You can find them here:
+
+- [Iteration 1](link)
+- [Iteration 2](link)
+- etc .
+
+Alternitively, the Epics and Stories are individually linked here :
+
+- [Epics and Stories](#development-process)
+
+In both cases, the status of each issue will indicate whether the user story has been completed.
+
+## Automated Testing
+
+### Testing django views, models and forms
+A full suite of automated tests is included in the project. The tests for each app are located in the `test/` folder within each respective app and can be run using the following command :
+
+`python3 manage.py test`
+
+The most recent coverage report is available in the `htmlcov/` folder at the project's root. To view it, you can serve the report locally by running Python's built-in HTTP server from the root folder :
+
+`python3 -m http.server`
+
+To generate the coverage HTML report, use the following commands:
+
+`coverage run manage.py test`
+
+`coverage html`
+
+---
+
+[Return to top](#Add_Title_Here)
+
+# Bugs
