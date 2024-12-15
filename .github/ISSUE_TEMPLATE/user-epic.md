@@ -7,6 +7,8 @@ assignees: ''
 
 ---
 
-As a **role**, I would like to **capability**, so that **outcome**
+## Description
 
-This epic has been distributed to the following User Stories:
+
+## Associated User Stories:
+- [....](link)
