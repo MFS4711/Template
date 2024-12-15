@@ -63,6 +63,10 @@ The website consists of ...
 [Return to top](#Add_Title_Here)
 
 # Features
+
+This section outlines the key features available to different types of users within the project. It describes pages and functionalities accessible to all users, authenticated users, and staff, highlighting the significance of each feature. Additionally, it includes a look at potential future features that could further enhance the user experience.
+
+## All Users
 The following pages are visible to all users, logged in or not.
 
 <!-- Create dropdowns for different sections following below format -->
@@ -113,6 +117,7 @@ The following pages are visible to all users, logged in or not.
 
 </details>
 
+## Authenticated (Logged in) Users
 The following pages are only available to logged in users.
 
 <details>
@@ -125,6 +130,7 @@ The following pages are only available to logged in users.
 
 <!-- Similar to previous just repeat for each page unique to this user -->
 
+## Staff (Authenticated)
 The remaining pages are only accessible to staff
 <details>
 <summary>... Page</summary>
@@ -148,6 +154,8 @@ The remaining pages are only accessible to staff
 [Return to top](#Add_Title_Here)
 
 # User Experience
+
+This section details the key elements of the user experience (UX) design for the project, including visual design choices, color schemes, typography, and wireframes. It provides insight into the aesthetic and functional decisions made to enhance usability across different devices, ensuring a seamless and accessible experience for users.
 
 ## Design
 
@@ -180,6 +188,8 @@ These wireframes outline how each page was intended to be displayed on Mobile, T
 [Return to top](#Add_Title_Here)
 
 # Development Process
+
+The development process for this project was carefully planned and documented to ensure efficient progress and transparency. This section outlines how the project was broken down into manageable tasks, tracked, and prioritized using GitHub Issues and Projects. It also covers the key steps taken, including project planning, SEO, data modeling, and data validation. Each sub-section provides a detailed look at the tools and methods used to guide development from initial planning to implementation.
 
 ## Project planning and documentation in GitHub
 GitHub Issues were used to document the development steps undertaken in the project. 
@@ -250,6 +260,7 @@ The following decimal fields, representing currency amounts, are protected by Dj
 [Return to top](#Add_Title_Here)
 
 # Testing
+
 The Testing section covers various strategies used to ensure the application's functionality and quality. This includes **manual testing** for hands-on verification, **validator testing** to check data integrity, **user story testing** to confirm features meet user requirements, and **automated testing** to streamline repeated tests and ensure consistent performance throughout development. Each approach contributes to a robust, error-free application.
 
 ## Manual Testing
@@ -373,10 +384,12 @@ To generate the coverage HTML report, use the following commands:
 
 # Bugs
 
-- A number of other bugs and their solution are documented in the issues tracker on GitHub, such as :
-    - [BUG NOT STRICTLY RELATED TO USER STORY](GITHUB_ISSUE_LINK)
-    - [ANOTHER BUG](GITHUB_ISSUE_LINK)
-    - etc.
+This section provides an overview of the bugs encountered during development, along with their resolutions. Any remaining issues or notable fixes are also tracked for reference.
+
+Several bugs encountered during development and their solutions are documented in the GitHub issues tracker. Some notable examples include:
+- [BUG NOT STRICTLY RELATED TO USER STORY](GITHUB_ISSUE_LINK)
+- [ANOTHER BUG](GITHUB_ISSUE_LINK)
+- etc.
 
 ## Remaining Bugs
 There should (hopefully) be no remaining bugs in the project.
@@ -386,6 +399,9 @@ There should (hopefully) be no remaining bugs in the project.
 [Return to top](#Add_Title_Here)
 
 # Libraries and Programs Used
+
+This section highlights the key libraries, tools, and platforms utilised throughout the development of the project. These technologies played an essential role in various aspects of the project, from wireframing and version control to deployment and testing.
+
 1. [Balsamiq](https://balsamiq.com/)
     - Balsamiq was used to wireframe all the pages in the project.
 2. [Git](https://git-scm.com/)
@@ -405,21 +421,60 @@ There should (hopefully) be no remaining bugs in the project.
 
 # Deployment
 
-## Deploying the app on Heroku
+This section provides a step-by-step guide for deploying your project to Heroku, ensuring that all necessary configurations and settings are in place for both development and production environments. Before deploying, you'll first clone the repository to your local machine to ensure that the original repo remains untouched during development. Follow these instructions to set up the app locally, deploy it to Heroku, and configure essential services like the database, social logins, and payment processing. By the end of this process, your app will be live and accessible on the web.
 
+## Making a Local Clone
+1. Open a terminal/command prompt on your local machine.
+2. Navigate to the directory where you want to clone the project.
+3. Run the following command to clone the repository :
 
-## Running the app in your local environment
+    `git clone 'REPO_LINK'`
 
+<!-- May need to refactor section as maybe arrange it to first confirm  -->
+## Running in Local Environment
+<!-- Add steps taken - packages installed to ensure local environment works -->
+<!-- Maybe remove common steps from heroku section -->
+
+## Deploying to Heroku
+1. **Log into Heroku** and navigate to the Dashboard.
+2. Click the **'New'** button.
+3. Choose a **unique app name** and select the region relevant to you.
+4. **Create a Database** - As a student at Code Institute, I used [CI Database Maker](https://dbs.ci-dbs.net/) but this can also be achieved on Heroku by paying a monthly fee and following the below steps:
+<!-- Add steps to create database here - i.e. Procfile and relevant code etc -->
+
+5. Go to the **Settings** tab, and click **Reveal Config Vars**. Add the following config variables, if not already present:
+    - **Django secret key**
+    - **Database URL**
+    - **Cloudinary API**
+    - etc
+    <!-- List all config vars visible - not giving their values -->
+6. In your **local repository**, add a **Procfile** to the root directory with this content:
+
+    `web: gunicorn strings-attached.wsgi`
+
+7. Add your Heroku app URL to the `ALLOWED_HOSTS` list in `settings.py`.
+8. Create ... social apps for Facebook and Google login:
+    - Add their API keys and Secrets to the database.
+    - Configure your application details and callback URLs in the Google and Facebook OAuth dashboards.
+    <!-- Amend this step based on if socials are used or not -->
+
+9. Set `DEBUG` to `False` in `settings.py`, then commit and push your changes to GitHub.
+10. Navigate to the **Deploy** tab in the Dashboard. Under **Deployment Method**, click the **GitHub** icon to connect your Heroku app to your GitHub repository.
+    - Enter your repository name, click **Search**, then click **Connect**.
+11. Under the **Manual Deploy** section, click **Deploy Branch**. Once deployed, you should see the message **"Your app was successfully deployed"**.
+12. Click **Open App** to open the app in the browser.
 
 ---
 
 [Return to top](#Add_Title_Here)
 
 # Credits
-
+<!-- Add any code credits and give links -->
+<!-- Add any image credits -->
+<!-- Add any specific research that was beneficial -->
 
 # Acknowledgements
-
+<!-- Add a paragraph to show appreciation -->
 
 ---
 
