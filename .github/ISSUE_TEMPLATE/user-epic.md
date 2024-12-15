@@ -1,6 +1,6 @@
 ---
-name: Default User Epic Template
-about: Describe this issue template's purpose here.
+name: User Epic
+about: Default User Epic Template
 title: 'USER EPIC : <TITLE>'
 labels: ''
 assignees: ''
