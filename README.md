@@ -9,11 +9,15 @@ The live project can be viewed [here](Add link)
 
 ---
 
-## Links to content
+## Table of Contents
 
 [**Purpose of Project**](#purpose-of-project)
 
-[**Features**](#Features)
+[**Features**](#features)
+- [All Users](#all-users)
+- [Authenticated (Logged in) Users](#authenticated-logged-in-users)
+- [Staff (Authenticated)](#staff-authenticated)
+- [Future Features](#future-features)
 
 [**User Experience**](#User-Experience)
 - [Design](#design)
@@ -21,10 +25,11 @@ The live project can be viewed [here](Add link)
     - [Colour](#colour)
     - [Wireframes](#wireframes)
 
-[**Development Process**](#Development-Process)
-- [Project Planning](#project-planning-and-documentation-in-github)
+[**Development Process**](#development-process)
+- [Project Planning](#project-planning-and-documentation-using-gitHub)
 - [Search Engine Optimization](#search-engine-optimization)
 - [Data Model](#data-model)
+- [Data Validation](#data-validation)
 
 [**Testing**](#Testing)
 - [Manual Testing](#manual-testing)
@@ -41,11 +46,11 @@ The live project can be viewed [here](Add link)
 [**Libraries and Programs Used**](#libraries-and-programs-used)
 
 [**Deployment**](#Deployment)
-- [Deploying the app on Heroku](#deploying-the-app-on-heroku)
-- [Making a local clone](#making-a-local-clone)
-- [Running the app in your local environment](#running-the-app-in-your-local-environment)
+- [Making a Local Clone](#making-a-local-clone)
+- [Running in Local Environment](#running-in-local-environment)
+- [Deploying to Heroku](#deploying-to-heroku)
 
-[**Credits**](#Credits)
+[**Credits**](#credits)
 
 [**Acknowledgements**](#acknowledgements)
 
@@ -191,7 +196,7 @@ These wireframes outline how each page was intended to be displayed on Mobile, T
 
 The development process for this project was carefully planned and documented to ensure efficient progress and transparency. This section outlines how the project was broken down into manageable tasks, tracked, and prioritized using GitHub Issues and Projects. It also covers the key steps taken, including project planning, SEO, data modeling, and data validation. Each sub-section provides a detailed look at the tools and methods used to guide development from initial planning to implementation.
 
-## Project planning and documentation in GitHub
+## Project Planning and Documentation Using GitHub
 GitHub Issues were used to document the development steps undertaken in the project. 
 Two issue templates were created: one for [User Epics]() and another for [User Stories]().
 A variety of labels were applied to categorise issue types, such as Bugs, User Epics, User Stories, and Style.
